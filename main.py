@@ -18,7 +18,7 @@ def get_nickname(e):
         "timor-leste": "The Land of the Rising Sun in South East Asia"
     }
 
-    country = document.getElementById('country_input').value
+    country = document.getElementById('country_input').value.lower()
 
     # Look up the nickname using .get(), with a default message if not found
     nickname = country_nicknames.get(country, "Sorry, I don't have a nickname for that country.")
